@@ -1,17 +1,24 @@
-name = "Ivy"
+description = "A theme ported from Ivy"
+features = ["blog"]
+homepage = "https://ivy.yihui.name"
 license = "Unlicense"
 licenselink = "https://github.com/yihui/hugo-ivy/blob/master/LICENSE.md"
-description = "A theme ported from Ivy"
-homepage = "https://ivy.yihui.name"
-tags = ["minimal", "blog", "personal", "clean", "simple", "minimalist"]
-features = ["blog"]
 min_version = "0.18"
+name = "Ivy"
+tags = ["minimal", "blog", "personal", "clean", "simple", "minimalist"]
 
 [author]
-  name = "Yihui Xie"
-  homepage = "https://yihui.name"
+homepage = "https://yihui.name"
+name = "Yihui Xie"
 
 [original]
-    author = "dmulholland"
-    homepage = "http://mulholland.xyz/docs/ivy/"
-    repo = "https://github.com/dmulholland/ivy"
+author = "dmulholland"
+homepage = "http://mulholland.xyz/docs/ivy/"
+repo = "https://github.com/dmulholland/ivy"
+
+[params]
+mpqrcode = "http://blogcdn.idoustudio.com/idoubi-mp.jpeg"
+
+[params.comment]
+repo = "idoubi/idoubi.cc"
+theme = "github-light"

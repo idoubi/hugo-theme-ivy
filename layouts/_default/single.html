@@ -3,4 +3,18 @@
 {{ if .Params.show_toc }} {{ .TableOfContents }} {{ end }}
 {{ .Content }}
 
+{{ if .Site.Params.mpqrcode }}
+<img src="{{ .Site.Params.mpqrcode }}" width="320" alt="">
+{{ end }}
+
+{{ if .Site.Params.comment }}
+<script src="https://utteranc.es/client.js"
+        repo="{{ .Site.Params.comment.repo }}"
+        issue-term="title"
+        theme="{{ .Site.Params.comment.theme }}"
+        crossorigin="anonymous"
+        async>
+</script>
+{{ end }}
+
 {{ partial "footer.html" . }}
